@@ -1,0 +1,73 @@
+/* АНИМИМАЦИЯ БОРДЕРА У КНОПКИ */
+
+@keyframes btn1 {
+    100%{
+        left: 100%;  
+    }
+}
+@keyframes btn2 {
+    100%{
+        top: 100%;
+        
+    }
+}
+@keyframes btn3 {
+    100%{
+        right: 100%   
+    }
+}
+@keyframes btn4 {
+    100%{
+        bottom: 100%;
+    }
+}
+
+
+
+/* АНИМАЦИЯ СТРЕЛКИ ВНИЗ */
+@keyframes up-down {
+    0%,
+	50%{
+		transform: scale(1);
+	}
+    60% {
+		transform: scale(1.2);
+	}
+    70%{
+        transform: scale(1);
+    }
+    80% {
+		transform: scale(1.2);
+	}
+    90%{
+        transform: scale(1);
+    }
+}
+
+/* АНИМАЦИЯ БЭКГРАУНДА (ДВИЖЕНИЕ НОТ) */
+
+@keyframes notes-up {
+    100%{
+        background-position-y:100%;
+    }
+}
+
+
+
+/* АНИМАЦИЯ ДВИЖЕНИЯ ФОТОГРАФИЙ */
+@keyframes slip {
+	0%{
+		top:-450px
+	}
+	100%{
+		top:100vh;
+	}
+}
+
+/* БЕГУЩАЯ СТРОКА */
+
+@keyframes ticker {
+	100%{
+		transform: translateX(-100%);
+	}
+}

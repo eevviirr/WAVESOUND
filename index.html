@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/wavesoundLogo__white.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Wave Sound</title>
+</head>
+<body>
+<!-------------- ОБЕРТКА САЙТА ---------------->
+<div class="wrapper">
+
+    <!-- ОБЕРТКА ВСЕХ СЕКЦИЙ ДЛЯ ФУЛЛ СКРОЛЛА -->
+    <div id="fullpage">
+        <!-- ОСНОВНОЙ КОНТЕНТ САЙТА -->
+
+<!------------- ПЕРВЫЙ ЭКРАН -------------->
+        <section class="section hero" id="hero">
+
+<!------ ШАПКА САЙТА НА ПЕРВОМ ЭКРАНЕ ------>
+            <header class="header header__hero">
+                <!-- КОНТЕЙНЕР ШАПКИ -->
+                <div class="container container__header">
+                    <!-- ЛЕВЫЙ БЛОК ШАПКИ -->
+                    <div class="left__header">
+
+                        <a href="#" class="logo"></a>
+                        <a href="#" class="menu__item link__authorization">ВХОД</a>
+                        <a href="tel:89052418161" class="menu__item">+7 902 241 81 61</a>
+                    </div>
+
+                    <!-- ПРАВЫЙ БЛОК ШАПКИ (МЕНЮ) -->
+                    <div class="right__header">
+                        <ul class="menu" id="menu">
+                            <!-- ДРОПДАУН МЕНЮ -->
+                            <li class="menu__item">
+                                <a href="#about" class="menu__item">О НАС</a>
+                                <ul class="dropDownMenu">
+                                    <li class="dropDownMenu__item"><a href="#" class="menu__item">Ссылка</a></li>
+                                    <li class="dropDownMenu__item"><a href="#" class="menu__item">Ссылка</a></li>
+                                    <li class="dropDownMenu__item"><a href="#" class="menu__item">Ссылка</a></li>
+                                </ul>
+                            </li>
+                                                    
+                            <li><a class="menu__item" href="#mixing">СВЕДЕНИЕ</a></li>
+                            <li><a class="menu__item" href="#adventages">ПРЕИМУЩЕСТВА</a></li>
+
+
+                            <li><a class="menu__item" href="#reviews">ОТЗЫВЫ</a></li>
+                            <li><a class="menu__item" href="#footer">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+
+
+
+<!------------- КОНТЕЙНЕР ПЕРВОГО ЭКРАНА --------------->
+                <div class="container container__hero" id="hero">
+<!---------- ЛЕВЫЙ БЛОК ПЕРВОГО ЭКРАНА --------->
+                    <div class="left__hero">
+                        <!-- ЗАГОЛОВОК -->
+                        <h1 class="title__hero">СВЕДЕНИЕ <br>
+                            ВАШЕГО ТРЕКА</h1>
+                            <!-- ПОДЗАГОЛОВОК -->
+                        <p class="text text__hero">
+                            Скидка 50% на сведение вашего трека до конца этого года, <br>
+                            при записи первого трека у нас на студии.
+                        </p>
+                        <!-- КНОПКА ПЕРВОЙ СТРАНИЦЫ -->
+                        <a href="#feedback" class="button__hero">
+                            Записаться
+                            <span class="button__hero__items  button__hero__top"></span>
+                            <span class="button__hero__items  button__hero__right"></span>
+                            <span class="button__hero__items  button__hero__bottom"></span>
+                            <span class="button__hero__items  button__hero__left"></span>
+                        </a>
+                        <p class="text timer" id="timer">
+                            До конца:
+                        </p>
+                        
+                    </div>
+
+<!----------------- ПРАВЫЙ БЛОК ПЕРВОГО ЭКРАНА -------------------->
+                    <div class="right__hero">
+                        <!-- МИКРОФОН -->
+                        <img src="img/micro.png" class="micro__hero" alt="">
+                        <!-- КНОПКА ВНИЗ -->
+                        <a href="#feedback" class="arrow arrow__hero"></a>
+                    </div>
+
+                    
+                </div>
+                <div class="notes"></div>
+            </section>
+
+
+
+
+        <!-------------- МОДАЛЬНОЕ ОКНО АВТОРИЗАЦИИ -------------->
+        <div class="modal modal__hero none">
+            <div class="content__modal">
+                <div class="authorization">
+
+                    <section class="authorization__item authorization-item">
+                        <h2 class="authorization-item__title">У вас уже есть аккаунт ?</h2>
+                        <button class="authorization-item__btn  singin-btn">Вход</button>
+                    </section>
+                    <section class="authorization__item authorization-item">
+                        <h2 class="authorization-item__title">У нас нет аккаунта?</h2>
+                        <button class="authorization-item__btn  singup-btn">Зарегистрироваться</button>
+                    </section>
+                    <video autoplay="autoplay" no-controls autoplay loop playsinline muted src="videos/travis.mp4"></video>
+
+
+                </div>
+
+                <div class="form-box">
+                    <form action="" class="form form__singin">
+                        <h3 class="form__title">Вход</h3>
+                        <p>
+                            <input type="text" class="form__input" placeholder="Логин" required>
+                        </p>
+                        <p>
+                            <input type="password" class="form__input" placeholder="Пароль" required>
+                        </p>
+                        <p>
+                            <button class="form__btn button form__btn__singin" type="submit" disabled>Войти</button>
+                        </p>
+                    </form>
+
+                    <form action="" class="form form__singup">
+                        <h3 class="form__title">Регистрация</h3>
+
+                            <input type="text" class="form__input" placeholder="Логин" required>
+
+                            <input type="password" class="form__input" placeholder="Пароль" required>
+
+                            <button class="form__btn button form__btn__singup" disabled>Зарегистрироваться</button>
+                    </form>
+                </div>
+
+            </div>
+            <button class="back">НАЗАД</button >
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+
+<!--------------- СЕКЦИЯ О НАС ---------------->
+            <section class="section about" id="about">
+
+
+
+                <!-- КОНТЕЙНЕР О НАС -->
+                <div class="container container__about" id="about">
+
+
+                    <!-- ЛЕВЫЙ БЛОК О НАС -->
+                    <div class="left__about">
+                        <h2 class="title">О НАС</h2>
+                        <p class="text text__about"><b>Wave sound</b>&nbsp;&mdash; профессиональная студия <br> аудио производства. Студия звукозаписи <br> была <b>основана в&nbsp;2013&nbsp;году</b>, за&nbsp;это время мы&nbsp;<br>выполнили более пяти тысяч заказов.</p>
+                        <p class="text text__about">Наша студия звукозаписи в&nbsp;Калининграде<br> делает  более 70&nbsp;аранжировок и&nbsp;записывает <br> более <b>370 песен</b>  в&nbsp;год.</p>
+                        <a href="#feedback" class="button button__about-us">записаться</a>
+                    </div>
+
+<!----------------- ПРАВЫЙ БЛОК О НАС -------------------->
+                    <div class="right__about">
+
+                        <!-- ЛЕВЫЕ ФОТО -->
+                        <div class="about-left">
+                            <div class="about__photo photo1"></div>
+                            <div class="about__photo photo2"></div>
+                            <div class="about__photo photo3"></div>
+                        </div>
+                        <!-- СРЕДНИЕ ФОТО -->
+                        <div class="about-middle">
+                            <div class="about__photo photo4"></div>
+                            <div class="about__photo photo5"></div>
+                            <div class="about__photo photo6"></div>
+                        </div>
+                        <!-- ПРАВЫЕ ФОТО -->
+                        <div class="about-right">
+                            <div class="about__photo photo7"></div>
+                            <div class="about__photo photo8"></div>
+                            <div class="about__photo photo9"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+        </section>
+
+
+<!------------- СЕКЦИЯ О ПРОДУКТРЕ (СВЕДЕНИЕ) -------------->
+            <section class="section mixing" id="mixing">
+                <!---------- КОНТЕЙНЕР О НАС ---------->
+                <div class="container container__mixing" id="mixing">
+                    <div class="left__mixing">
+                        <div class="icon--wrapper">
+                            <img class="img" src="img/mixer.gif" alt="" class="icon" id="icon">
+                            <div class="img--border"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="right__mixixng">
+                        <h2 class="title title__mixing">БАЛАНС ГРОМКОСТИ
+                            И ПАНОРАМИРОВАНИЕ</h2>
+
+                        <p class="text text__mixing">Прежде чем начать, установите все параметры громкости и панорамирования на ноль. Этот процесс называется нормализацией. Обратите внимание, что это нужно делать со всеми инструментами. Как соло, так и в качестве субстрата.</p>
+
+
+                        <div class="bottom__mixing">
+                            <hr>
+                            <div class="steps">
+                                <p class="step">ШАГ 1</p>
+                                <p class="step">ШАГ 2</p>
+                                <p class="step">ШАГ 3</p>
+                            </div>
+                            <div class="socials__mixing">
+                                <img src="img/telegram.svg" alt="" class="socials">
+                                <img src="img/dribble.svg" alt="" class="socials">
+                                <img src="img/pinterest.svg" alt="" class="socials">
+                            </div>
+                            <a href="#feedback" class="button button__mixing">записаться</a>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <!-- БЕГУЩАЯ СТРОКА -->
+                <div class="ticker">
+                    <div class="ticker__wraper">
+                        <div class="ticker__item">КАК ЭТО РАБОТАЕТ</div>
+                        <div class="ticker__item">КАК ЭТО РАБОТАЕТ</div>
+                        <div class="ticker__item">КАК ЭТО РАБОТАЕТ</div>
+                        <div class="ticker__item">КАК ЭТО РАБОТАЕТ</div>
+                        <div class="ticker__item">КАК ЭТО РАБОТАЕТ</div>
+                        <div class="ticker__item">КАК ЭТО РАБОТАЕТ</div>         
+                    </div>
+                </div>
+            </section>
+
+
+
+
+<!-------------- БЛОК ПРИЕМУЩЕСТВА -------------->
+            <section class="section adventages" id="adventages">
+
+
+
+<!-- КОНТЕЙНЕР ПРИЕМУЩЕСТВА -->
+                <div class="container container__adventages" id="adventages">
+                    <h2 class="title">ПРИЕМУЩЕСТВА</h2>
+                    <!-- КАРТОЧКИ ПРИЕМУЩЕСТВ -->
+                    <div class="cards">
+                        <div class="card card__price">
+                            <div class="icon__cards dollar"></div>
+                            <h2 class="title">Низкая цена</h2>
+                            <p class="text">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Гор то до семь своих подпоясал. </p>
+                        </div>
+                        <div class="card card__personally">
+                            <div class="icon__cards personally"></div>
+                            <h2 class="title">Личный подход</h2>
+                            <p class="text">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Гор то до семь своих подпоясал. </p>
+                        </div>
+                        <div class="card card__fast">
+                            <div class="icon__cards fast"></div>
+                            <h2 class="title">Быстрое обслуживание</h2>
+                            <p class="text">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Гор то до семь своих подпоясал. </p>
+                        </div>
+                    </div>
+                    <a href="#feedback" class="button button__adventages">записаться</a>
+
+                </div>
+            </section>
+
+
+
+
+
+<!----------- СЕКЦИЯ С ПРИМЕРАМИ -------------->
+            <section class="section examples" id="examples">
+
+
+                <div class="container container__ex">
+                    <h2 class="title title__ex">ПРИМЕРЫ НАШИХ РАБОТ</h2>
+                    <!-- СЛАЙДЕР -->
+                    <div class="container__palyer">
+                        <div class="slider">
+                            <div class="slider__item slider__item1 minor"></div>
+                            <div class="slider__item slider__item2 alien_girl"></div>
+                            <div class="slider__item slider__item3 dawn"></div>
+                        </div>
+
+                        <!-- ПЛЕЕР -->
+                        <div class="player">
+                            <!-- НАЗВАНИЕ ТРЕКА -->
+                            <h2 class="title title__player">MIYAGI & ANDY PANDA</h2>
+                            <h3 class="name__music">MINOR</h3>
+
+                            <!-- ПРОГРЕСС БАР -->
+                            <div class="line__music">
+                                <div class="dot__music"></div>
+                            </div>
+
+                            <!-- КНОПКА ПЛЕЙ/ПУЗА -->
+                            <div class="play-pause">
+                                <div class="play"></div>
+                                <div class="pause none"></div>
+                            </div>
+                            <!-- АУДИО КОТОРОГО НЕ ВИДНО -->
+                            <audio src="audio/minor.mp3" class="audioplayer"></audio>
+                            <div class="muted">
+                            </div>
+                        </div>
+
+                        <!-- КНОПКИ ПЕРЕКЛЮЧЕНИЯ ТРЕКОВ -->
+                        <button class="arrow-left arrow-slid"></button>
+                        <button class="arrow-right arrow-slid"></button>
+                        <button class="preview"></button>
+                    </div>
+                    <a href="#feedback" class="button button__ex">записаться</a>
+
+                </div>
+
+                <!-- ВИДЕО НА ЗАДНЕМ ПЛАНЕ -->
+                <video class="video examples__video" no-controls autoplay loop playsinline muted src="videos/minor.mp4"></video>
+            </section>
+
+
+
+
+
+<!------------ СЕКЦИЯ ОТЗЫВЫ ------------->
+            <section class="section reviews" id="reviews">
+
+                <!-- КОНТЕНТ ОТЗЫВОВ -->
+                <div class="container container__reviews">
+                    <h2 class="title">ОТЗЫВЫ</h2>
+                    <div class="reviews__items">
+
+                        <!-- ОТЗЫВ 1 -->
+                        <div class="review rev-1" data-rev="1">
+                                <img class="user--photo" src="https://cdn1.img.sputniknews.uz/img/07e5/0a/1f/21171990_265:0:2313:2048_1920x0_80_0_0_505ae98eb59861e7aab1db5fe5cc47bb.jpg" alt="">
+                            <div class="review__top">
+                                <div class="review__top--left">
+                                    Имя Пользователя
+                                    <br>
+                                    <div class="rev--data">
+                                        20.20.20
+                                    </div>
+                                    
+                                </div>
+                                <div class="review__top--right">
+                                    <button class="prev--text">Показать полностью</button>
+                                    <div class="likes">
+                                        <span class="numLikes">0</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 7.45903C20 9.91767 18.6462 11.9245 15.8611 13.5944C12.347 15.7014 10.6207 18.2379 10.6036 18.2633C10.4686 18.4645 10.2422 18.5852 9.99995 18.5852C9.75792 18.5852 9.53178 18.4647 9.39675 18.264C9.37039 18.2249 7.62457 15.6844 4.13894 13.5944C1.35383 11.9245 0 9.91758 0 7.45903C0 4.529 1.90963 1.41501 5.44857 1.41501C7.8192 1.41501 9.2562 2.46467 10 3.25097C10.7439 2.46457 12.1809 1.41501 14.5515 1.41501C18.0905 1.41491 20 4.529 20 7.45903Z" fill="#111"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla eveniet et ducimus debitis, commodi exercitationem! Distinctio odit laboriosam error tempora consequatur modi corrupti officiis molestias. </p>
+                        </div>
+
+
+                        <!-- ОТЗЫВ 2 -->
+                        <div class="review rev-2" data-rev="2">
+                            <img class="user--photo" src="https://i.scdn.co/image/ab6761610000e5ebf3bf0f0db7be411cc9bb6515" alt="">
+                            <div class="review__top">
+                                <div class="review__top--left">
+                                    Имя Пользователя
+                                    <br>
+                                    <div class="rev--data">
+                                        02.01.23
+                                    </div>
+                                    
+                                </div>
+                                <div class="review__top--right">
+                                    <button class="prev--text">Показать полностью</button>
+                                    <div class="likes">
+                                        <span class="numLikes">0</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 7.45903C20 9.91767 18.6462 11.9245 15.8611 13.5944C12.347 15.7014 10.6207 18.2379 10.6036 18.2633C10.4686 18.4645 10.2422 18.5852 9.99995 18.5852C9.75792 18.5852 9.53178 18.4647 9.39675 18.264C9.37039 18.2249 7.62457 15.6844 4.13894 13.5944C1.35383 11.9245 0 9.91758 0 7.45903C0 4.529 1.90963 1.41501 5.44857 1.41501C7.8192 1.41501 9.2562 2.46467 10 3.25097C10.7439 2.46457 12.1809 1.41501 14.5515 1.41501C18.0905 1.41491 20 4.529 20 7.45903Z" fill="#111"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review__text">Placeat a repudiandae culpa nam in modi necessitatibus quod nemo cum iste! Magnam eaque dignissimos molestiae, laboriosam laudantium pariatur debitis facere repellat consequuntur quia corrupti sunt aperiam labore itaque earum aliquam ex nihil minima quibusdam animi, distinctio deserunt quis. </p>
+                        </div>
+
+
+                        <!-- ОТЗЫВ 3 -->
+                        <div class="review rev-3" data-rev="3">
+                            <img class="user--photo" src="https://i.scdn.co/image/ab6761610000e5eb5a25709b715527aae9f5beb3" alt="">
+                            <div class="review__top">
+                                <div class="review__top--left">
+                                    Имя Пользователя
+                                    <br>
+                                    <div class="rev--data">
+                                        20.03.23
+                                    </div>
+                                    
+                                </div>
+                                <div class="review__top--right">
+                                    <button class="prev--text">Показать полностью</button>
+                                    <div class="likes">
+                                        <span class="numLikes">0</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 7.45903C20 9.91767 18.6462 11.9245 15.8611 13.5944C12.347 15.7014 10.6207 18.2379 10.6036 18.2633C10.4686 18.4645 10.2422 18.5852 9.99995 18.5852C9.75792 18.5852 9.53178 18.4647 9.39675 18.264C9.37039 18.2249 7.62457 15.6844 4.13894 13.5944C1.35383 11.9245 0 9.91758 0 7.45903C0 4.529 1.90963 1.41501 5.44857 1.41501C7.8192 1.41501 9.2562 2.46467 10 3.25097C10.7439 2.46457 12.1809 1.41501 14.5515 1.41501C18.0905 1.41491 20 4.529 20 7.45903Z" fill="#111"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla eveniet et ducimus debitis, commodi exercitationem! Distinctio odit laboriosam error tempora consequatur modi corrupti officiis molestias. Placeat a repudiandae culpa nam in modi necessitatibus quod nemo cum iste! Magnam eaque dignissimos molestiae, laboriosam laudantium pariatur debitis facere repellat consequuntur quia corrupti sunt aperiam labore itaque earum aliquam ex nihil minima quibusdam animi, distinctio deserunt quis. </p>
+                        </div>
+
+
+
+                        <!-- ОТЗЫВ 4 -->
+                        <div class="review rev-4" data-rev="4">
+                            <img class="user--photo" src="https://i1.sndcdn.com/artworks-tXILhRqfZovMkNHR-g0bmaA-t500x500.jpg" alt="">
+                            <div class="review__top">
+                                <div class="review__top--left">
+                                    Имя Пользователя
+                                    <br>
+                                    <div class="rev--data">
+                                        01.06.22
+                                    </div>
+                                    
+                                </div>
+                                <div class="review__top--right">
+                                    <button class="prev--text">Показать полностью</button>
+                                    <div class="likes">
+                                        <span class="numLikes">0</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 7.45903C20 9.91767 18.6462 11.9245 15.8611 13.5944C12.347 15.7014 10.6207 18.2379 10.6036 18.2633C10.4686 18.4645 10.2422 18.5852 9.99995 18.5852C9.75792 18.5852 9.53178 18.4647 9.39675 18.264C9.37039 18.2249 7.62457 15.6844 4.13894 13.5944C1.35383 11.9245 0 9.91758 0 7.45903C0 4.529 1.90963 1.41501 5.44857 1.41501C7.8192 1.41501 9.2562 2.46467 10 3.25097C10.7439 2.46457 12.1809 1.41501 14.5515 1.41501C18.0905 1.41491 20 4.529 20 7.45903Z" fill="#111"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla eveniet et ducimus debitis, commodi exercitationem! Distinctio odit laboriosam error tempora consequatur modi corrupti officiis molestias. Placeat a repudiandae culpa nam in modi necessitatibus quod nemo cum iste! </p>
+                        </div>
+
+
+                        <!-- ОТЗЫВ 5 -->
+                        <div class="review rev-5 none" data-rev="5">
+                            <img class="user--photo" src="https://steepmen.ru/wp-content/uploads/2021/01/33d4a01710d5bcfbae1d9b3283e94ca6.1000x1000x1.jpg" alt="">
+                            <div class="review__top">
+                                <div class="review__top--left">
+                                    Имя Пользователя
+                                    <br>
+                                    <div class="rev--data">
+                                        26.3.23
+                                    </div>
+                                    
+                                </div>
+                                <div class="review__top--right">
+                                    <button class="prev--text">Показать полностью</button>
+                                    <div class="likes">
+                                        <span class="numLikes">0</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 7.45903C20 9.91767 18.6462 11.9245 15.8611 13.5944C12.347 15.7014 10.6207 18.2379 10.6036 18.2633C10.4686 18.4645 10.2422 18.5852 9.99995 18.5852C9.75792 18.5852 9.53178 18.4647 9.39675 18.264C9.37039 18.2249 7.62457 15.6844 4.13894 13.5944C1.35383 11.9245 0 9.91758 0 7.45903C0 4.529 1.90963 1.41501 5.44857 1.41501C7.8192 1.41501 9.2562 2.46467 10 3.25097C10.7439 2.46457 12.1809 1.41501 14.5515 1.41501C18.0905 1.41491 20 4.529 20 7.45903Z" fill="#111"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla eveniet et ducimus debitis, commodi exercitationem! Distinctio odit laboriosam error tempora consequatur modi corrupti officiis molestias. Placeat a repudiandae culpa nam in modi necessitatibus quod nemo cum iste! Magnam eaque dignissimos molestiae, laboriosam laudantium pariatur debitis facere repellat consequuntur quia corrupti sunt aperiam labore itaque earum aliquam ex nihil minima quibusdam animi, distinctio deserunt quis. </p>
+                        </div>
+
+
+
+                        <!-- ОТЗЫВ 6 -->
+                        <div class="review rev-6 none" data-rev="6">
+                            <img class="user--photo" src="https://lastfm.freetls.fastly.net/i/u/ar0/aac3688dab5c357dd9a452a473bbfe9e.jpg" alt="">
+                            <div class="review__top">
+                                <div class="review__top--left">
+                                    Имя Пользователя
+                                    <br>
+                                    <div class="rev--data">
+                                        20.01.23
+                                    </div>
+                                    
+                                </div>
+                                <div class="review__top--right">
+                                    <button class="prev--text">Показать полностью</button>
+                                    <div class="likes">
+                                        <span class="numLikes">0</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 7.45903C20 9.91767 18.6462 11.9245 15.8611 13.5944C12.347 15.7014 10.6207 18.2379 10.6036 18.2633C10.4686 18.4645 10.2422 18.5852 9.99995 18.5852C9.75792 18.5852 9.53178 18.4647 9.39675 18.264C9.37039 18.2249 7.62457 15.6844 4.13894 13.5944C1.35383 11.9245 0 9.91758 0 7.45903C0 4.529 1.90963 1.41501 5.44857 1.41501C7.8192 1.41501 9.2562 2.46467 10 3.25097C10.7439 2.46457 12.1809 1.41501 14.5515 1.41501C18.0905 1.41491 20 4.529 20 7.45903Z" fill="#111"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla eveniet et ducimus debitis, commodi exercitationem! Distinctio odit laboriosam error tempora consequatur modi corrupti officiis molestias. Placeat a repudiandae culpa nam in modi necessitatibus quod nemo cum iste! </p>
+                        </div>
+
+
+                        <!-- ОТЗЫВ 7 -->
+                        <div class="review rev-7 none" data-rev="7">
+                            <img class="user--photo" src="https://avatars.dzeninfra.ru/get-zen_doc/29317/pub_5c45eb7591c33f00ad5cca32_5c5406c216b33b00af190759/scale_1200" alt="">
+                            <div class="review__top">
+                                <div class="review__top--left">
+                                    Имя Пользователя
+                                    <br>
+                                    <div class="rev--data">
+                                        25.12.22
+                                    </div>
+                                    
+                                </div>
+                                <div class="review__top--right">
+                                    <button class="prev--text">Показать полностью</button>
+                                    <div class="likes">
+                                        <span class="numLikes">0</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 7.45903C20 9.91767 18.6462 11.9245 15.8611 13.5944C12.347 15.7014 10.6207 18.2379 10.6036 18.2633C10.4686 18.4645 10.2422 18.5852 9.99995 18.5852C9.75792 18.5852 9.53178 18.4647 9.39675 18.264C9.37039 18.2249 7.62457 15.6844 4.13894 13.5944C1.35383 11.9245 0 9.91758 0 7.45903C0 4.529 1.90963 1.41501 5.44857 1.41501C7.8192 1.41501 9.2562 2.46467 10 3.25097C10.7439 2.46457 12.1809 1.41501 14.5515 1.41501C18.0905 1.41491 20 4.529 20 7.45903Z" fill="#111"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla eveniet et ducimus debitis, commodi exercitationem! Distinctio odit laboriosam error tempora consequatur modi corrupti officiis molestias. Placeat a repudiandae culpa nam in modi necessitatibus quod nemo cum iste! Magnam eaque dignissimos molestiae, laboriosam laudantium pariatur debitis facere repellat consequuntur quia corrupti sunt aperiam labore itaque earum aliquam ex nihil minima quibusdam animi, distinctio deserunt quis. </p>
+                        </div>
+
+
+
+                        <!-- ОТЗЫВ 8 -->
+                        <div class="review rev-8 none" data-rev="8">
+                            <img class="user--photo" src="https://images.genius.com/09c3744c927c434788dc9d7953de4113.1000x1000x1.jpg" alt="">
+                            <div class="review__top">
+                                <div class="review__top--left">
+                                    Имя Пользователя
+                                    <br>
+                                    <div class="rev--data">
+                                        20.03.23
+                                    </div>
+                                    
+                                </div>
+                                <div class="review__top--right">
+                                    <button class="prev--text">Показать полностью</button>
+                                    <div class="likes">
+                                        <span class="numLikes">0</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 7.45903C20 9.91767 18.6462 11.9245 15.8611 13.5944C12.347 15.7014 10.6207 18.2379 10.6036 18.2633C10.4686 18.4645 10.2422 18.5852 9.99995 18.5852C9.75792 18.5852 9.53178 18.4647 9.39675 18.264C9.37039 18.2249 7.62457 15.6844 4.13894 13.5944C1.35383 11.9245 0 9.91758 0 7.45903C0 4.529 1.90963 1.41501 5.44857 1.41501C7.8192 1.41501 9.2562 2.46467 10 3.25097C10.7439 2.46457 12.1809 1.41501 14.5515 1.41501C18.0905 1.41491 20 4.529 20 7.45903Z" fill="#111"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla eveniet et ducimus debitis, commodi exercitationem! Distinctio odit laboriosam error tempora consequatur modi corrupti officiis molestias. Placeat a repudiandae culpa nam in modi necessitatibus quod nemo cum iste! </p>
+                        </div>
+
+
+
+                        <!-- ОТЗЫВ 9 -->
+                        <div class="review rev-8 none" data-rev="9">
+                            <img class="user--photo" src="https://images.genius.com/6cdcba76fe2f8ab8d5cf1646a49d011d.1000x1000x1.jpg" alt="">
+                            <div class="review__top">
+                                <div class="review__top--left">
+                                    Имя Пользователя
+                                    <br>
+                                    <div class="rev--data">
+                                        23.01.23
+                                    </div>
+                                    
+                                </div>
+                                <div class="review__top--right">
+                                    <button class="prev--text">Показать полностью</button>
+                                    <div class="likes">
+                                        <span class="numLikes">0</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 7.45903C20 9.91767 18.6462 11.9245 15.8611 13.5944C12.347 15.7014 10.6207 18.2379 10.6036 18.2633C10.4686 18.4645 10.2422 18.5852 9.99995 18.5852C9.75792 18.5852 9.53178 18.4647 9.39675 18.264C9.37039 18.2249 7.62457 15.6844 4.13894 13.5944C1.35383 11.9245 0 9.91758 0 7.45903C0 4.529 1.90963 1.41501 5.44857 1.41501C7.8192 1.41501 9.2562 2.46467 10 3.25097C10.7439 2.46457 12.1809 1.41501 14.5515 1.41501C18.0905 1.41491 20 4.529 20 7.45903Z" fill="#111"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla eveniet et ducimus debitis, commodi exercitationem! Distinctio odit laboriosam error tempora consequatur modi corrupti officiis molestias. Placeat a repudiandae culpa nam in modi necessitatibus quod nemo cum iste! </p>
+                        </div>
+
+
+                        <!-- ОТЗЫВ 10 -->
+                        <div class="review rev-7 none" data-rev="10">
+                            <img class="user--photo" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Xxxtentacion_%28cropped%29.jpg" alt="">
+                            <div class="review__top">
+                                <div class="review__top--left">
+                                    Имя Пользователя
+                                    <br>
+                                    <div class="rev--data">
+                                        30.01.23
+                                    </div>
+                                    
+                                </div>
+                                <div class="review__top--right">
+                                    <button class="prev--text">Показать полностью</button>
+                                    <div class="likes">
+                                        <span class="numLikes">1</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 7.45903C20 9.91767 18.6462 11.9245 15.8611 13.5944C12.347 15.7014 10.6207 18.2379 10.6036 18.2633C10.4686 18.4645 10.2422 18.5852 9.99995 18.5852C9.75792 18.5852 9.53178 18.4647 9.39675 18.264C9.37039 18.2249 7.62457 15.6844 4.13894 13.5944C1.35383 11.9245 0 9.91758 0 7.45903C0 4.529 1.90963 1.41501 5.44857 1.41501C7.8192 1.41501 9.2562 2.46467 10 3.25097C10.7439 2.46457 12.1809 1.41501 14.5515 1.41501C18.0905 1.41491 20 4.529 20 7.45903Z" fill="#111"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla eveniet et ducimus debitis, commodi exercitationem! Distinctio odit laboriosam error tempora consequatur modi corrupti officiis molestias. Placeat a repudiandae culpa nam in modi necessitatibus quod nemo cum iste! Magnam eaque dignissimos molestiae, laboriosam laudantium pariatur debitis facere repellat consequuntur quia corrupti sunt aperiam labore itaque earum aliquam ex nihil minima quibusdam animi, distinctio deserunt quis. </p>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="buttons">
+                        <button class="button__review__all">Все отзывы</button>
+                        <a href="#feedback" class="button">записаться</a>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+<!----------------- СЕКЦИЯ ОБРАТНОЙ СВЯЗИ  --------------------->
+            <section class="section feedback" id="feedback">
+
+                <div class="container container__feedback" id="feedback">
+
+                    <div class="left__feedback">
+                        <form action="" class="form__feedback">
+
+
+                            <input type="text" name="" id="" data-name="name" class="input__feedback text name--user" placeholder="Имя" onpaste="return false;" onCopy="return false">
+                            <ul class="valid valid--name">
+                                <li>Минимум 4 символа</li>
+                                <li>Только буквы</li>
+                            </ul>
+
+
+
+                            <input type="tel" name="" id="" class="input__feedback tel--user text" placeholder="Телефон" onpaste="return false;" onCopy="return false">
+
+
+                            <input type="text" name="" id="" data-email="" class="input__feedback text email--user" placeholder="Электронная почта" onpaste="return false;" onCopy="return false">
+                            <ul class="valid valid--email">
+                                <li>Введите корректную почту (mail@mail.ru)</li>
+                            </ul>
+
+
+                            <textarea name="" id="" class="input__feedback message text" placeholder="Сообщение" cols="30" rows="10" maxlength="255" onpaste="return false;" onCopy="return false"></textarea>
+                            <input type="submit" class="button btn__feedback" value="отправить"  disabled>
+
+
+                        </form>
+                    </div>
+
+                    
+
+                </div>
+                    <div class="right__feedback">
+                        <video autoplay muted src="videos/feedbackvideo.mp4"></video>
+                    </div>
+            </section>
+
+<!---------------------- ПОДВАЛ САЙТА -------------------------->
+            <footer class="section footer">
+
+
+
+
+
+<!-------- КОНТЕНТ ПОДВАЛА САЙТА -------->
+                <div class="container container__footer" id="footer">
+                    <!-- КАРТА В ПОДВАЛЕ САЙТА -->
+                    <div class="top__footer">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.341527361818!2d20.48955753612656!3d54.721207215504485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e33dff2575bffd%3A0x5165890afc18f222!2z0YPQuy4g0JHRgNCw0LzRgdCwLCA5LCDQmtCw0LvQuNC90LjQvdCz0YDQsNC0LCDQmtCw0LvQuNC90LjQvdCz0YDQsNC00YHQutCw0Y8g0L7QsdC7LiwgMjM2MDIy!5e0!3m2!1sru!2sru!4v1677333714922!5m2!1sru!2sru" width="1520" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    </div>
+                    <!-- НИЖНИЙ БЛОК ПОДВАЛА -->
+                    <div class="bottom__footer">
+                        <div class="left__footer">
+                            <!-- КОНТАКТЫ -->
+                            <div class="contacts">
+                                <h3 class="title title__footer">КОНТАКТЫ</h3>
+                                <a href="tel:89052418161" class="text text__footer">+79052418161</a>
+                                <a href="mailto:hom.1232015@yandex.ru" class="text text__footer">hom.1232015@yandex.ru</a>
+                                <address style="font-style: normal;" class="text text__footer">ул.Брамса 9</address>
+
+                            </div>
+                            <!-- СОЦИАЛЬНЫЕ СЕТИ -->
+                            <div class="social">
+                                <h3 class="title title__footer">СОЦ.СЕТИ</h3>
+                                <a href="#" class="text text__footer">Telegram</a>
+                                <a href="#" class="text text__footer">Vk</a>
+                                <a href="#" class="text text__footer">Pinterest</a>
+                            </div>
+                        </div>
+                        <!-- МЕНЮ ПОДВАЛА -->
+                            <ul class="menu menu__footer">
+                                <li>
+                                    <a class="menu__item" href="#hero">ГЛАВНАЯ</a>
+                                </li>
+                                <li>
+                                    <a class="menu__item" href="#about">О НАС</a>
+                                </li>
+                                <li>
+                                    <a class="menu__item" href="#mixing">СВЕДЕНИЕ</a>
+                                </li>
+                                <li>
+                                    <a class="menu__item" href="#adventages">ПРИЕМУЩЕСТВА</a>
+                                </li>
+                                <li>
+                                    <a class="menu__item" href="#reviews">ОТЗЫВЫ</a>
+                                </li>
+                            </ul>
+                            <a href="#hero" class="arrow arrow__footer"></a>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+                <!--------------- ШАПКА НА ВСЕХ ЭКРАНАХ --------------->
+                <header class="header header__basis">
+                    <div class="container container__header">
+                        <div class="leftblok__header">
+                            <ul>
+                                <li><a href="#" class="wavesound-logo wavesound-logo__header"><img src="img/wavesoundLogo__white.svg" alt=""></a></li>
+                            </ul>
+                                            
+                        </div>
+                    
+                        <div class="rightblok__header">
+                            <!-- БУРГЕР МЕНЮ -->
+                            <button class="burger">
+                                <span class="burger-item1 burger__items"></span>
+                                <span class="burger-item2 burger__items"></span>
+                                <span class="burger-item3 burger__items"></span>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+
+         <!-- МЕНЮ САЙТА -->
+         <div class="menu__basic">
+            <div class="container container__menu">
+                <div class="all--link">
+                    <ul class="menu--link">
+                        <li><a href="#hero" class="link link__menu link__menu__1" content="ГЛАВНАЯ">ГЛАВНАЯ</a></li>
+                        <li><a href="#about" class="link link__menu link__menu__2" content="О&nbsp;НАС">О НАС</a></li>
+                        <li><a href="#mixing" class="link link__menu link__menu__3" content="СВЕДЕНИЕ">СВЕДЕНИЕ</a></li>
+                        <li><a href="#adventages" class="link link__menu link__menu__4" content="ПРИЕМУЩЕСТВА">ПРИЕМУЩЕСТВА</a></li>
+                        <li><a href="#examples" class="link link__menu link__menu__5" content="ПРИМЕРЫ">ПРИМЕРЫ</a></li>
+                        <li><a href="#reviews" class="link link__menu link__menu__6" content="ОТЗЫВЫ">ОТЗЫВЫ</a></li>
+                        <li><a href="#feedback" class="link link__menu link__menu__7" content="ОБРАТНАЯ&nbsp;СВЯЗЬ">ОБРАТНАЯ&nbsp;СВЯЗЬ</a></li>
+                        <li><a href="#footer" class="link link__menu link__menu__8" content="КОНТАКТЫ">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+    <!-- СКРИПТЫ -->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" ></script> 
+    <script src="scripts/valid.js"></script>
+    <script src="scripts/timer.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/autorization.js"></script>
+</body>
+</html>

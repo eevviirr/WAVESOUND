@@ -1,0 +1,350 @@
+@media screen and (max-width: 1270px){
+    .header__hero{
+        display: none;
+    }
+    .hero:not(.header__basis){
+        z-index: 10005;
+    }
+    .header__basis:not(.hero){
+        z-index: 10006;
+    }
+    .menu__basic{
+        z-index: 10005;
+    }
+
+
+    .mixing{
+        height: 120vh;
+    }
+    .adventages{
+        height: 350vh;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .container__adventages{
+        height: 100%;
+    }
+
+    .bottom__mixing{
+        position: absolute;
+        bottom:-100px;
+    }
+
+
+
+    .micro__hero{
+        width: 850px;
+        height: 900px;
+        z-index: -1;
+    }
+
+
+
+    .container__palyer{
+        height: 350px;
+    }
+    .player{
+        padding-top:50px;
+    }
+    .slider__item{
+        width: 350px;
+        height: 350px;
+    }
+    .muted{
+        bottom: 170px;
+        right: 55px;
+    }
+    .arrow-left{
+        top: 115%;
+        left: 40%;
+    }
+    .arrow-right{
+        top: 115%;
+        right: 30%;
+    }
+    .video{
+        height: 100vh;
+        width: 150vw;
+    }
+
+    .reviews__items{
+        grid-template-columns: 610px ;
+    }
+    .map{
+        width: 100%;
+    }
+
+
+
+    .right__mixixng{
+        width: 60%;
+    }
+    .left__mixing{
+        width: 40%;
+    }
+    .container__mixing{
+        gap: 20px;
+    }
+    .ticker{
+        z-index: -1;
+    }
+
+
+
+    .bottom__footer{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        bottom:-200px;
+    }
+
+    .menu__footer{
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .footer{
+        height: 150vh;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .micro__hero{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0.5;
+    }
+    .right__about{
+        display: none;
+    }
+    .container__about{
+        align-items:center;
+        justify-content: center;
+    }
+
+
+
+    .container__mixing{
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        height: 60%;
+    }
+    .left__mixing{
+        display: none;
+    }
+    .bottom__mixing{
+        top: 650px;
+    }
+    .right__mixixng{
+        width: 500px;
+    }
+
+
+
+
+
+    .container__palyer{
+        height: 250px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .slider{
+        display: none;
+    }
+    .video{
+        height: 100vh;
+        width: 250vw;
+    }
+    .player{
+        height: 400px;
+        overflow: visible;
+        padding-top: 0;
+        gap: 10px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .muted {
+        bottom: 170px;
+        right: 115px;
+        bottom: 210px;
+    }
+    .line__music{
+        margin-top: 20px;
+    }
+    .play, .pause{
+        top:-55px;
+    }
+    .slider__item{
+        width: 200px;
+        height: 200px;
+    }
+    .arrow-right{
+        right: 25%;
+    }
+
+
+
+
+    .container__feedback{
+        width: 500px;
+    }
+    .right__feedback{
+        display: none;
+    }
+    .left__feedback{
+        left: 500px;
+    }
+
+
+
+
+
+    .bottom__footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer{
+        height: 150vh;
+    }
+    .menu__footer{
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+}
+
+
+
+@media screen and (max-width: 620px){
+    .title{
+        font-size: 32px;
+        text-align: center;
+    }
+    .title__hero{
+        font-size: 32px;
+    }
+    .container{
+        align-items:center;
+        text-align: center;
+    }
+    .button{
+        width: 100%;
+    }
+    .right__hero{
+        display: none;
+    }
+    .container{
+        justify-content: center;
+    }
+    .container__header{
+        justify-content: space-between;
+    }
+    .hero{
+        height: 120vh;
+    }
+    
+
+
+
+    .mixing{
+        height: 200vh;
+    }
+    .bottom__mixing{
+        top: 1050px;
+        flex-direction: column;
+        overflow: visible;
+    }
+    .button__mixing{
+        top: 150px;
+    }
+    .right__mixixng{
+        width: 300px;
+    }
+
+
+
+
+    .card{
+        width: 300px;
+    }
+
+
+    .adventages{
+        height: 380vh;
+    }
+    .mixing{
+        height: 250vh;
+    }
+
+
+    .arrow-right{
+        right: 0;
+    }
+
+    .video{
+        display: none;
+    }
+    .muted{
+        right: 40px;
+        bottom: 170px;
+    }
+    .preview{
+        display: none;
+    }
+
+
+    .about{
+        height: 120vh;
+    }
+    .button__review__all{
+        display: none;
+    }
+
+
+
+
+    .reviews__items{
+        grid-template-columns: 300px;
+    }
+    .user--photo{
+        left: -100%;
+    }
+    .review{
+        display: flex;
+        flex-direction: column;
+    }
+    .review__top{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .likes{
+        justify-content: center;
+    }
+    .input__feedback{
+        width: 300px;
+    }
+    .title__hero{
+        line-height: 50px;
+    }
+
+
+    .arrow__footer{
+        display: none;
+    }
+    .left__footer{
+        flex-direction: column;
+    }
+    .footer{
+        height: 220vh;
+    }
+    .contacts{
+        margin-top: 200px;
+    }
+}
